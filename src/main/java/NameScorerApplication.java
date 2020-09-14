@@ -1,3 +1,5 @@
+import static java.lang.System.*;
+
 public class NameScorerApplication {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class NameScorerApplication {
         for (String arg : args) {
             if (arg.length() > 0) {
                 // Assume argument is a filename
-                System.out.println("SCORE: " + scorer.scoreNamesFromFile(arg));
+                out.println("SCORE: " + scorer.scoreNamesFromFile(arg));
             }
         }
     }
