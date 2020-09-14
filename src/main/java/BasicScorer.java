@@ -19,9 +19,6 @@ public class BasicScorer extends AbstractNameScorer {
         // Parse file contents to List<String>
         List<String> list = Arrays.asList(readStringFromFile(pathToFile).split("[,\r\n]"));
 
-        // Use this regex to split on comma except if the comma is within double quotes
-        // text.split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
-
         // Transform to new list with non-letter characters removed and empty strings removed
         List<String> list2 = list.stream()
                 // remove empty strings
